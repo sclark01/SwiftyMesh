@@ -10,6 +10,8 @@
 		587605C41D650ACE00DFA043 /* SwiftyMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 587605C31D650ACE00DFA043 /* SwiftyMesh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		587605CB1D650ACE00DFA043 /* SwiftyMesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587605C01D650ACD00DFA043 /* SwiftyMesh.framework */; };
 		587605D01D650ACE00DFA043 /* SwiftyMeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587605CF1D650ACE00DFA043 /* SwiftyMeshTests.swift */; };
+		587605DB1D650CCD00DFA043 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587605DA1D650CCD00DFA043 /* Nimble.framework */; };
+		587605DD1D650CD300DFA043 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587605DC1D650CD300DFA043 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		587605CA1D650ACE00DFA043 /* SwiftyMeshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyMeshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		587605CF1D650ACE00DFA043 /* SwiftyMeshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMeshTests.swift; sourceTree = "<group>"; };
 		587605D11D650ACE00DFA043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587605DA1D650CCD00DFA043 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		587605DC1D650CD300DFA043 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587605DD1D650CD300DFA043 /* Quick.framework in Frameworks */,
+				587605DB1D650CCD00DFA043 /* Nimble.framework in Frameworks */,
 				587605CB1D650ACE00DFA043 /* SwiftyMesh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +59,8 @@
 		587605B61D650ACD00DFA043 = {
 			isa = PBXGroup;
 			children = (
+				587605DC1D650CD300DFA043 /* Quick.framework */,
+				587605DA1D650CCD00DFA043 /* Nimble.framework */,
 				587605C21D650ACE00DFA043 /* SwiftyMesh */,
 				587605CE1D650ACE00DFA043 /* SwiftyMeshTests */,
 				587605C11D650ACD00DFA043 /* Products */,
@@ -148,6 +156,7 @@
 				TargetAttributes = {
 					587605BF1D650ACD00DFA043 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 93BUV7U238;
 					};
 					587605C91D650ACE00DFA043 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -310,6 +319,7 @@
 		587605D51D650ACE00DFA043 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -326,6 +336,7 @@
 		587605D61D650ACE00DFA043 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +389,7 @@
 				587605D61D650ACE00DFA043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		587605D71D650ACE00DFA043 /* Build configuration list for PBXNativeTarget "SwiftyMeshTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +398,7 @@
 				587605D91D650ACE00DFA043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
