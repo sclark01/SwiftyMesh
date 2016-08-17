@@ -4,3 +4,7 @@ xcode_workspace: SwiftyMesh.xcworkspace
 xcode_scheme: SwiftyMesh
 xcode_sdk: iphonesimulator9.3
 
+before_install:
+  - brew update
+  - brew install carthage
+  - carthage bootstrap
