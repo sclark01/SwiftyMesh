@@ -5,4 +5,4 @@ An iOS Framework for ThoughtWork's bluetooth mesh
 ## Getting Started
 
 ### Carthage 
-`Carthage update`
+run: `Carthage update`
