@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode7.3
-xcode_project: SwiftyMesh.xcodeproj 
+xcode_workspace: SwiftyMesh.xcworkspace
 xcode_scheme: SwiftyMesh
 xcode_sdk: iphonesimulator9.3
 
