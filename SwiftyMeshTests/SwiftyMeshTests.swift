@@ -7,7 +7,7 @@ class SwiftyMeshTests : QuickSpec {
     override func spec() {
         describe("the tests for swiftyMesh") {
             it("should pass") {
-                expect(true).to(beTrue())
+
             }
         }
     }

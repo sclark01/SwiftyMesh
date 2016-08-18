@@ -9,6 +9,6 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "9.3"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/sclark01/SwiftyMesh.git", submodules: true }
-  spec.source_files = "RGB/**/*.{h,swift}"
+  spec.source_files = "SwiftyMesh/**/*.{h,swift}"
 
 end

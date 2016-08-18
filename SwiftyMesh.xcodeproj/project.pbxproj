@@ -12,6 +12,7 @@
 		587605D01D650ACE00DFA043 /* SwiftyMeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587605CF1D650ACE00DFA043 /* SwiftyMeshTests.swift */; };
 		587605DB1D650CCD00DFA043 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587605DA1D650CCD00DFA043 /* Nimble.framework */; };
 		587605DD1D650CD300DFA043 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587605DC1D650CD300DFA043 /* Quick.framework */; };
+		587605DF1D65316800DFA043 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587605DE1D65316800DFA043 /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		587605D11D650ACE00DFA043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587605DA1D650CCD00DFA043 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		587605DC1D650CD300DFA043 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		587605DE1D65316800DFA043 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				587605C31D650ACE00DFA043 /* SwiftyMesh.h */,
 				587605C51D650ACE00DFA043 /* Info.plist */,
+				587605DE1D65316800DFA043 /* ConnectionManager.swift */,
 			);
 			path = SwiftyMesh;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587605DF1D65316800DFA043 /* ConnectionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +323,7 @@
 		587605D51D650ACE00DFA043 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -330,12 +335,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.SwiftyMesh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		587605D61D650ACE00DFA043 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
